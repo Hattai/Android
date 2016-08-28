@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.crusoandroid.escolha_layouts.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/grupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/cocacola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:onClick="changeImage"
+                android:text="COCA-COLA" />
+
+            <RadioButton
+                android:id="@+id/pepsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="changeImage"
+                android:text="PEPSI" />
+
+            <RadioButton
+                android:id="@+id/fanta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="changeImage"
+                android:text="FANTA" />
+
+            <RadioButton
+                android:id="@+id/soda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="changeImage"
+                android:text="SODA" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imgEscolha"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/coca_cola" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Escolher"
+        android:onClick="toastEscolha"
+        android:id="@+id/btnEscolha"
+        />
+
+</LinearLayout>
